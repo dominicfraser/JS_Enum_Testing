@@ -50,9 +50,12 @@ var arrayTasks = {
 	    return results;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var newArray = arr.filter(function(item){
+			return item !== valueToRemove
+		});
+		return newArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		
