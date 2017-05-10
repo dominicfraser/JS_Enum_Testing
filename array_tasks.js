@@ -57,9 +57,15 @@ var arrayTasks = {
 		return newArray;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-		
-	// },
+	findIndexesOf: function (arr, itemToFind) {
+		var indexs = [];
+		for (var i = 0; i < arr.length; i++){
+			if (arr[i] === itemToFind){
+				indexs.push(i);
+			}
+		}
+		return indexs;
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 		
