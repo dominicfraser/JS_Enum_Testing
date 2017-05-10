@@ -9,15 +9,22 @@ var arrayTasks = {
 			newArray.push(item);
 		}
 		return newArray;
+		// Array.prototype.push.apply(arr1, arr2);
+		// return arr1;
 	},
 
-	insertAt: function (arr, itemToAdd, index) {
-					
-	},
+	// insertAt: function (arr, itemToAdd, index) {
 
-	// square: function (arr) {
-		
 	// },
+
+	square: function (arr) {
+		var newArray = [];
+		for (var item of arr){
+			newArray.push(item*item);
+		}
+
+		return newArray;
+	},
 
 	// sum: function (arr) {
 		
