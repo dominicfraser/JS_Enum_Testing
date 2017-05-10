@@ -67,9 +67,18 @@ var arrayTasks = {
 		return indexs;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		var evens = arr.filter(function(num){
+			if(num % 2 == 0){
+				return num;
+			} 
+		})
+		var sum = 0;
+		evens.forEach(function(number){
+			sum += (number*number);
+		})
+		return sum;
+	}
 
 }
 
